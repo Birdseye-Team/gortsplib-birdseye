@@ -173,3 +173,11 @@ In RTSP, media streams are transmitted by using RTP packets, which are encoded i
 * [pion/sdp (SDP library used internally)](https://github.com/pion/sdp)
 * [pion/rtp (RTP library used internally)](https://github.com/pion/rtp)
 * [pion/rtcp (RTCP library used internally)](https://github.com/pion/rtcp)
+
+# Birdseye extensions
+
+* On v4.12.3-b1, added nil-check for RTSP client stats
+* To use from our MediaMTX build, use the replace directive in `go.mod`
+```
+replace github.com/bluenviron/gortsplib/v4 => github.com/Birdseye-Team/gortsplib-birdseye/v4 v4.12.3-b1
+```
