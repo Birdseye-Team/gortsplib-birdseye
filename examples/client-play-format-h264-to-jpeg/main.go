@@ -20,12 +20,12 @@ import (
 
 // This example shows how to
 // 1. connect to a RTSP server
-// 2. check if there's a H264 format
+// 2. check if there's a H264 stream
 // 3. decode the H264 stream into RGBA frames
 // 4. convert RGBA frames to JPEG images and save them on disk
 
 // This example requires the FFmpeg libraries, that can be installed with this command:
-// apt install -y libavformat-dev libswscale-dev gcc pkg-config
+// apt install -y libavcodec-dev libswscale-dev gcc pkg-config
 
 func saveToFile(img image.Image) error {
 	// create file

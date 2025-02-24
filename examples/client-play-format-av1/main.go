@@ -15,11 +15,11 @@ import (
 
 // This example shows how to
 // 1. connect to a RTSP server
-// 2. check if there's a AV1 format
+// 2. check if there's a AV1 stream
 // 3. decode the AV1 stream into RGBA frames
 
 // This example requires the FFmpeg libraries, that can be installed with this command:
-// apt install -y libavformat-dev libswscale-dev gcc pkg-config
+// apt install -y libavcodec-dev libswscale-dev gcc pkg-config
 
 func main() {
 	c := gortsplib.Client{}
